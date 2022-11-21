@@ -1,9 +1,24 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
+function Header() {
+  return (
+      <header>
+          <nav className="navbar">
+              <img src="./react-logo.png" width="40px" />
+              <ul className="nav-items">
+                  <li>Pricing</li>
+                  <li>About</li>
+                  <li>Contact</li>
+              </ul>
+          </nav>
+      </header>
+  )
+}
+
 function Page() {
     <div>
-        <img src="./react-logo.png" width="40px" />
+        <Header />
         <h1>Fun facts about React</h1>
         <ul>
             <li>Was first released in 2013</li>
