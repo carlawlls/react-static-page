@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const page = (
+function Page() {
     <div>
         <img src="./react-logo.png" width="40px" />
         <h1>Fun facts about React</h1>
@@ -13,9 +13,9 @@ const page = (
             <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
     </div>
-)
+}
 
 // ReactDOM.render(page, document.getElementById("root"))
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(page)
+root.render(<Page />)
